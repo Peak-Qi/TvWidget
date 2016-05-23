@@ -293,7 +293,7 @@ public class BorderEffect implements Effect {
     protected int[] getLocation(View view) {
         int[] location = new int[2];
         try {
-            view.getLocationOnScreen(location);
+            view.getLocationInWindow(location);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
